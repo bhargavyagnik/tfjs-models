@@ -94,11 +94,13 @@ use.loadQnA().then(model => {
   //   responses: Response[];
   // }
   // queries is an array of question strings
-  // responses is an array of following structure:
-  // {
-  //   response: string;
-  //   context?: string;
-  // }
+  // If you want to add context to the answers, you need to pass an array of contexts corresponding to responses.
+  // E.g 
+  //{
+  //    queries:string[],
+  //    responses:string[],
+  //    contexts:string[]
+  //}
   // context is optional, it provides the context string of the answer.
 
   const input = {
